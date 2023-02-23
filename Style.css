@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.menu{
+    background:linear-gradient(to right, rgba(3, 3, 3, 0.95), rgba(0, 0, 0, 0.95));
+}
+
+.shadow{
+    box-shadow: 0 0,5rem 10rem rgb(0 0 0 / 15%);
+}
+
+main{
+    background-color:#e85d04 ;
+}
+
+.navbar-brand{
+    padding-left: 10px;
+}
+
+p{
+    color: white;
+}
+
