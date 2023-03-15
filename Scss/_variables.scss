@@ -1,37 +1,41 @@
-.contactanos1{
-    margin-top: 10rem;
+.contactanos1 {
+  margin-top: 10rem;
 }
 
-.Cliente1:hover{
-transform: scale(1.1);
+.Cliente1:hover {
+  transform: scale(1.1);
 }
-.Cliente2:hover{
-    transform: scale(1.1);
-    }
-    .Cliente3:hover{
-        transform: scale(1.1);
-        }
-        .Cliente4:hover{
-            transform: scale(1.1);
-            }
-            .Cliente5:hover{
-                transform: scale(1.1);
-                }
-                .Cliente6:hover{
-                    transform: scale(1.1);
-                    }
+.Cliente2:hover {
+  transform: scale(1.1);
+}
+.Cliente3:hover {
+  transform: scale(1.1);
+}
+.Cliente4:hover {
+  transform: scale(1.1);
+}
+.Cliente5:hover {
+  transform: scale(1.1);
+}
+.Cliente6:hover {
+  transform: scale(1.1);
+}
+.animated-text {
+  font-size: 11rem;
+  background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0),
+      rgb(255, 255, 255),
+      rgba(0, 0, 0, 0.932)
+    )
+    0 0 / 400% 100%;
+  animation: move-bg 4s infinite linear;
+  color: transparent;
+  -webkit-background-clip: text;
+}
 
-                    .animated-text {
-                        font-size: 11rem;
-                        background: linear-gradient(90deg, rgb(0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0.932)) 0 0 / 400% 100%;
-                        animation: move-bg 4s infinite linear;
-                        color: transparent;
-                        -webkit-background-clip: text;
-                      }
-                      
-                      @keyframes move-bg {
-                        to {
-                          background-position: 400% 0;
-                        }
-                      }
-                      
+@keyframes move-bg {
+  to {
+    background-position: 400% 0;
+  }
+}
