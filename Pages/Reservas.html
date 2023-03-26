@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mantenciones MTB</title>
     <link rel="stylesheet" href="../css/Style.css" />
-    <meta name="description" content="Nuestra página web es el lugar ideal para quienes buscan un servicio técnico especializado en bicicletas. Ofrecemos servicios de reparación, mantenimiento y ajuste de bicicletas para garantizar un óptimo desempeño y prolongar su vida útil. Nuestro taller de bicicletas cuenta con profesionales altamente capacitados, quienes se encargarán de inspeccionar minuciosamente tu bicicleta y realizar las reparaciones y ajustes necesarios para que puedas disfrutar de tus paseos de manera segura y cómoda.Además, te brindamos consejos útiles para cuidar y mantener tu bicicleta en casa. No esperes más y visítanos en nuestra página web para conocer más acerca de nuestros servicios y productos. ¡Tu bicicleta te lo agradecerá! ">
-    <meta name="keywords"content="Mantenimiento de bicicletas, Reparación de bicicletas, servicio tecnico de bicicletas, taller de bicicletas, bicicletas en buen estado, cuidado de bicicletas, piezas de bicicletas, accesorios de bicicletas, lubricación de bicicletas, ajuste de frenos y cambios, inspección de bicicletas, cambio de neumaticos, alineación de ruedas, cadena de bicicletas, frenos de bicicletas, ajuste de asiento de bicicletas, ajuste de manubrio">
+    <link rel="Shortcut icon" href="../imgs/bike-icon.png" />
+    <meta
+      name="description"
+      content="Nuestra página web es el lugar ideal para quienes buscan un servicio técnico especializado en bicicletas. Ofrecemos servicios de reparación, mantenimiento y ajuste de bicicletas para garantizar un óptimo desempeño y prolongar su vida útil. Nuestro taller de bicicletas cuenta con profesionales altamente capacitados, quienes se encargarán de inspeccionar minuciosamente tu bicicleta y realizar las reparaciones y ajustes necesarios para que puedas disfrutar de tus paseos de manera segura y cómoda.Además, te brindamos consejos útiles para cuidar y mantener tu bicicleta en casa. No esperes más y visítanos en nuestra página web para conocer más acerca de nuestros servicios y productos. ¡Tu bicicleta te lo agradecerá! "
+    />
+    <meta
+      name="keywords"
+      content="Mantenimiento de bicicletas, Reparación de bicicletas, servicio tecnico de bicicletas, taller de bicicletas, bicicletas en buen estado, cuidado de bicicletas, piezas de bicicletas, accesorios de bicicletas, lubricación de bicicletas, ajuste de frenos y cambios, inspección de bicicletas, cambio de neumaticos, alineación de ruedas, cadena de bicicletas, frenos de bicicletas, ajuste de asiento de bicicletas, ajuste de manubrio"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -44,7 +51,8 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#mynavbar">
+            data-bs-target="#mynavbar"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="mynavbar">
@@ -68,32 +76,102 @@
           </div>
         </div>
       </nav>
-  </header>
-   <main>
-    <section class="Home">
-      <div class="row align-items-center text-white p-5">
-        <div class="col-md-6 intros">
-          <h1 class="display-2 p-4">
-            <span class="display-2--intro fw-bold">Taller de Bicicletas DC <br> Mantenimiento a Domicilio</span>
-          </h1>
-          <button type="button" class="rounded-pill btn-rounded">
-            CONTACTANOS
-          </button>
-          <button type="button" class="rounded-pill btn-rounded">
-            SERVICIOS
-          </button>
-        </div>
-        <div class="col-md-6 intros text-end">
-          <div class="img-box">
-            <img src="../imgs/Full Inbox _Two Color.svg" alt="Us" class="img-fluid">
+    </header>
+    <main>
+      <section class="Home">
+        <div class="row align-items-center text-white p-5">
+          <div class="col-md-6 intros">
+            <h1 class="display-2 p-4">
+              <span class="display-2--intro fw-bold"
+                >Taller de Bicicletas DC <br />
+                Mantenimiento a Domicilio</span
+              >
+            </h1>
+            <button type="button" class="rounded-pill btn-rounded">
+              CONTACTANOS
+            </button>
+            <button type="button" class="rounded-pill btn-rounded">
+              SERVICIOS
+            </button>
+          </div>
+          <div class="col-md-6 intros text-end">
+            <div class="img-box">
+              <img
+                src="../imgs/Full Inbox _Two Color.svg"
+                alt="Us"
+                class="img-fluid"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+        <!-- Titulo -->
+        <section id="intro-section" class="help mb-3">
+          <div class="container">
+            <div class="row text-center">
+              <h1 class="animated-text display-3 fw-bold text-capitalize">Reserva con nosotros</h1>
+              <div class="heading-line"></div>
+              <p class="lh-lg text-black">
+                ¡Estamos a tu disposición para ayudarte con todas tus necesidades de mantenimiento de bicicletas!
+              </p>
+            </div>
+            <!--formulario-->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="https://i.pinimg.com/550x/6f/95/6c/6f956cec8d7676a0ca3827720e33d8c0.jpg" alt="Imagen de reserva" class="img-fluid d-block">
+                </div>
+                <div class="col-md-6">
+                  <form>
+                    <div class="form-group">
+                      <label for="nombre">Nombre completo:</label>
+                      <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="telefono">Teléfono:</label>
+                      <input type="tel" class="form-control" id="telefono">
+                    </div>
+                    <div class="form-group">
+                      <label for="fecha-llegada">Fecha de llegada:</label>
+                      <input type="date" class="form-control" id="fecha-llegada">
+                    </div>
+                    <div class="form-group">
+                      <label for="Mantencion">Tipo de mantención</label>
+                      <select class="form-control" id="Tipo_mantención">
+                        <option>Seleccionar</option>
+                        <option>Servicios Basicos </option>
+                        <option>Servicios Avanzados</option>
+                        <option>Mantencion Basica $20.000.-</option>
+                        <option>Mantencion Intermedia $35.000.-</option>
+                        <option>mantencion Avanzada $50.000.-</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Bicicletas">N° Bicicletas</label>
+                      <select class="form-control" id="N° Bicicletas">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="comentarios">Comentarios:</label>
+                      <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </section>
     </main>
 
-            <!-- footer -->
-    <footer class="footer  bg-dark">
+    <!-- footer -->
+    <footer class="footer bg-dark">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6">
@@ -105,33 +183,71 @@
           <div class="col-lg-3 col-md-6">
             <h5>Enlaces útiles</h5>
             <ul class="list-unstyled">
-              <li><a class="text-white text-decoration-none" href="./Pages/Nosotros.html">Acerca de nosotros</a></li>
-              <li><a class="text-white text-decoration-none" href="./Pages/Contacto.html">Términos y condiciones</a></li>
-              <li><a class="text-white text-decoration-none" href="./Pages/Contacto.html">Política de privacidad</a></li>
+              <li>
+                <a
+                  class="text-white text-decoration-none"
+                  href="./Pages/Nosotros.html"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white text-decoration-none"
+                  href="./Pages/Contacto.html"
+                  >Términos y condiciones</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white text-decoration-none"
+                  href="./Pages/Contacto.html"
+                  >Política de privacidad</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6">
             <h5>Redes sociales</h5>
             <ul class="list-unstyled">
-              <li><a  class="text-white text-decoration-none " href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-              <li><a  class="text-white text-decoration-none" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-              <li><a  class="text-white text-decoration-none" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li>
+                <a class="text-white text-decoration-none" href="#"
+                  ><i class="fab fa-facebook"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a class="text-white text-decoration-none" href="#"
+                  ><i class="fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a class="text-white text-decoration-none" href="#"
+                  ><i class="fab fa-instagram"></i> Instagram</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6">
             <h5>Suscríbete a nuestro boletín</h5>
-            <p>Recibe noticias y ofertas especiales en tu correo electrónico.</p>
+            <p>
+              Recibe noticias y ofertas especiales en tu correo electrónico.
+            </p>
             <form>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Correo electrónico">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Correo electrónico"
+                />
               </div>
               <button type="submit" class="btn btn-primary">Suscríbete</button>
             </form>
           </div>
         </div>
-        <p class="text-center p-3">© 2023 Mantenciones MTB DC. Todos los derechos reservados | Creado por DarwinCerda</p>
+        <p class="text-center p-3">
+          © 2023 Mantenciones MTB DC. Todos los derechos reservados | Creado por
+          DarwinCerda
+        </p>
       </div>
     </footer>
-          </body>
-        </html>
-        
+  </body>
+</html>
