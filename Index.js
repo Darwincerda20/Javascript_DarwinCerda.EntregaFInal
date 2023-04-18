@@ -21,5 +21,5 @@ if (horaActual >= 0 && horaActual < 12) {
 }
 
 console.log(
-  mensaje + ", " + nombre +". ¡Bienvenido a nuestra página, en caso de que necesites ayuda contactanos!");
+  mensaje + ", " + nombre +". ¡Llegaste al lugar indicado, en caso de que necesites ayuda contactanos!");
 
