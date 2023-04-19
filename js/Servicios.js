@@ -1,27 +1,17 @@
 /* console.log("Hola estoy aprendiendo a usar js"); */
 
-const kmRecorridos = prompt("Para asesorarte mejor ingresa tus km recorridos");
+let kmRecorridos = prompt("Hola, ¿Para poder asesorarte mejor cuántos kilómetros recorriste el año pasado?");
 
-let recomendacion = " ";
-
-if (kmRecorridos < 500) {
-  recomendacion =
-    "Es recomendable llevar la bicicleta a un taller al menos una vez al año para asegurarse de que esté en buen estado y hacer cualquier reparación necesaria.";
-} else if (kmRecorridos >= 500 && kmRecorridos < 2000) {
-  recomendacion =
-    "Es recomendable llevar la bicicleta a un taller al menos dos veces al año para asegurarse de que esté en buen estado y hacer cualquier reparación necesaria.";
-} else if (kmRecorridos >= 2000 && kmRecorridos < 5000) {
-  recomendacion =
-    "Es recomendable llevar la bicicleta a un taller al menos tres veces al año para asegurarse de que esté en buen estado y hacer cualquier reparación necesaria.";
+if (kmRecorridos < 1000) {
+  console.log("Es posible que una mantención al año sea suficiente.");
+} else if (kmRecorridos >= 1000 && kmRecorridos <= 5000) {
+  console.log("Se recomienda realizar dos mantenciones al año.");
 } else {
-  recomendacion =
-    "Es recomendable llevar la bicicleta a un taller al menos cuatro veces al año para asegurarse de que esté en buen estado y hacer cualquier reparación necesaria.";
+  console.log("Puede ser necesario realizar hasta tres mantenciones al año para mantener tu bicicleta en buen estado.");
 }
 
-console.log(`El total a pagar por los servicios solicitados es de ${total}.`);
 
-// Valor para cada servicio
-const servicios = {
+const SERVICIOS = {
   visita: 5000,
   regulacion: 6000,
   ajustefreno: 7000,
@@ -35,26 +25,38 @@ const servicios = {
 };
 
 let total = 0;
+let continuar = true;
 
-while (true) {
-  const servicio = prompt(
-    "Introduce el nombre del servicio que necesitas (o 'out' para salir):"
-  );
-
-  if (servicio === "out") {
-    break;
+while (continuar) {
+  let eligeUnaOpción = "Servicios disponibles:\n";
+  for (const servicio in SERVICIOS) {
+    eligeUnaOpción += `- ${servicio}: ${SERVICIOS[servicio]} CLP\n`;
   }
 
-  if (servicios[servicio]) {
-    total += servicios[servicio];
+  const servicioIngresado = prompt(
+    `${eligeUnaOpción}\nIntroduce el nombre o abreviatura del servicio que necesitas (o 'out' para salir):`
+  ).toLowerCase();
+
+  if (servicioIngresado === "out") {
+    continuar = false;
+    continue;
+  }
+
+  const servicioEncontrado = Object.keys(SERVICIOS).find((servicio) =>
+    servicio.startsWith(servicioIngresado)
+  );
+
+  if (servicioEncontrado) {
+    total += SERVICIOS[servicioEncontrado];
     console.log(
-      `Has añadido el servicio de ${servicio}. El total actual es de ${total}.`
+      `Has añadido el servicio de ${servicioEncontrado}. El total actual es de ${total}.`
     );
   } else {
     alert(
-      `El servicio de ${servicio} no existe. Por favor, introduce un servicio válido.`
+      `El servicio de ${servicioIngresado} no existe. Por favor, introduce un servicio válido.`
     );
   }
 }
 
 console.log(`El total a pagar por los servicios solicitados es de ${total}.`);
+
