@@ -44,7 +44,7 @@ const serviciosDisponibles = {
   },
 };
 
-console.log(serviciosDisponibles)
+console.log(serviciosDisponibles);
 
 /* Función para mostrar las opciones */
 function mostrarOpciones(mensaje) {
