@@ -1,7 +1,7 @@
 /* console.log("Hola estoy aprendiendo a usar js");
  */
 
-const horaActual = new Date().getHours(); // Obtiene la hora actual del sistema
+const horaActual = new Date().getHours(); // Resultado hora actual del sistema
 
 if (horaActual >= 9 && horaActual < 18) {
   console.log("El negocio está abierto");
