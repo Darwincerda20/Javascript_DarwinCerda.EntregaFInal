@@ -20,6 +20,6 @@ if (horaActual >= 0 && horaActual < 12) {
   mensaje = "Buenas noches";
 }
 
-console.log(
+alert(
   mensaje + ", " + nombre +". ¡Llegaste al lugar indicado, en caso de que necesites ayuda contactanos!");
 

@@ -93,4 +93,4 @@ function agregarServicioAlCarrito(nombre) {
   carrito += 1;
 }
 
-mostrarOpciones();
+

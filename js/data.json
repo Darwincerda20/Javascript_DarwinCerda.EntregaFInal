@@ -1,0 +1,79 @@
+[
+  {
+    "precio": 5000,
+    "id": 1,
+    "titulo": "Visita Tecnica",
+    "Imagen": "https://thumbs.dreamstime.com/b/checklist-sheet-paper-flat-vector-cartoon-illustration-objects-isolated-white-background-check-list-icon-108257866.jpg",
+    "Descripcion": "Visita técnica especializada para evaluación y diagnóstico de reparaciones"
+  },
+  {
+    "precio": 4500,
+    "id": 2,
+    "titulo": "Regulación Cambios",
+    "Imagen": "https://media.wd40.es/app/uploads/2020/12/19151618/como-ajustar-cambios-bici.jpeg",
+    "Descripcion": "Cambia de marcha sin problemas: Servicio de regulación de cambios para una experiencia de ciclismo suave y sin esfuerzo"
+  },
+  {
+    "precio": 3500,
+    "id": 3,
+    "titulo": "Ajuste de frenos",
+    "Imagen": "https://tuvalum.com/blog/wp-content/uploads/2021/04/Mecanico-reparando-frenos.jpg",
+    "Descripcion": "Detente con confianza: Servicio de ajuste de frenos para una frenada segura y efectiva en tu bicicleta"
+  },
+  {
+    "precio": 10000,
+    "id": 4,
+    "titulo": "Servicio a Domicilio",
+    "Imagen": "https://blog.montenbaik.com/wp-content/uploads/2022/02/004__Mobile_1280x1200_Delivery-501x469.jpg",
+    "Descripcion": "Comodidad a tu puerta: Servicio de mantenimiento y reparación de bicicletas a domicilio para una experiencia de ciclismo sin interrupciones"
+  },
+  {
+    "precio": 15000,
+    "id": 5,
+    "titulo": "Sangrado Frenos",
+    "Imagen": "https://www.sport.es/bicio/wp-content/uploads/2021/12/Portada-frenos.jpg",
+    "Descripcion": "Frenos en óptimas condiciones: Servicio de sangrado de frenos para una frenada potente y confiable en tu bicicleta"
+  },
+  {
+    "precio": 7000,
+    "id": 6,
+    "titulo": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61reUoOY7SL._AC_UF894,1000_QL80_.jpg",
+    "Imagen": "https://picsum.photos/id/0/600",
+    "Descripcion": "Un paseo sin vibraciones: Servicio de alineación o centrado de ruedas para una conducción suave y equilibrada en tu bicicleta"
+  },
+  {
+    "precio": 25000,
+    "id": 7,
+    "titulo": "Cambio de Maza o Piñon",
+    "Imagen": "https://challacycling.cl/wp-content/uploads/2020/11/sram-mullet.jpg",
+    "Descripcion": "Actualiza tu bicicleta: Servicio de cambio de maza o piñón para una transmisión más eficiente y una experiencia de ciclismo mejorada"
+  },
+  {
+    "precio": 35000,
+    "id": 8,
+    "titulo": "Revisión de Horquillas",
+    "Imagen": "https://www.sport.es/bicio/wp-content/uploads/2018/11/horquilla-de-suspension-portada.jpg",
+    "Descripcion": "Una suspensión suave y segura: Servicio de revisión de horquillas para una absorción efectiva de impactos y un manejo preciso en terrenos difíciles"
+  },
+  {
+    "precio": 35000,
+    "id": 9,
+    "titulo": "Mantencion Basica",
+    "Imagen": "https://solobici.es/wp-content/uploads/2019/01/mantenimiento_1.jpg",
+    "Descripcion": "Lubricación de cadena y componentes móviles, ajuste de frenos, verificación de los tornillos y pernos, ajuste de la presión de los neumáticos, limpieza general y verificación de los radios de las ruedas"
+  },
+  {
+    "precio": 45000,
+    "id": 10,
+    "titulo": "Mantencion Intermedia",
+    "Imagen": "http://bicicletasmiguel.com/wp-content/uploads/2016/09/reparacion-bicicletas-miguel-avila.jpg",
+    "Descripcion": "Reemplazo de cables y fundas de frenos y cambios, ajuste de la tensión de los radios, ajuste de la caja de pedalier, reemplazo de pastillas de freno y/o discos, ajuste de la suspensión y limpieza y engrase de los componentes de la dirección"
+  },
+  {
+    "precio": 55000,
+    "id": 11,
+    "titulo": "Mantencion Full",
+    "Imagen": "https://www.mdzol.com/u/fotografias/m/2019/12/4/f638x638-3046_61213_5050.jpg",
+    "Descripcion": "limpieza completa, reemplazo y ajuste de componentes como cables, frenos y transmisión, ajuste de caja de pedalier y rodamientos, inspección completa de frenos y cambios, ajuste y lubricación de suspensión y dirección, verificación de neumáticos y aplicación de protección"
+  }
+]

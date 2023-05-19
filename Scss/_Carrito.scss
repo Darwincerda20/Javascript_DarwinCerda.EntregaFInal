@@ -1,0 +1,38 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 25%;
+  padding: 10px;
+}
+
+.carrito-container {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.producto-carrito {
+  margin-bottom: 10px;
+}
+
+.producto-carrito input {
+  width: 50px;
+  text-align: center;
+}
+#carrito {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.producto-carrito {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.h5 {
+  color: white;
+}

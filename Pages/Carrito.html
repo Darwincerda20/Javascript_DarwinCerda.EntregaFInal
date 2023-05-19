@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mantenciones MTB</title>
-    <link rel="stylesheet" href="../css/Style.css" />
+    <link rel="stylesheet" href="../Scss/Style.css" />
     <link rel="Shortcut icon" href="../imgs/bike-icon.png" />
     <meta
       name="description"
@@ -64,10 +64,7 @@
                 <a class="nav-link" href="Nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./Servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Reservas.html">Reservas</a>
+                <a class="nav-link" href="./Carrito.html">Carrito</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./Contacto.html">Contacto</a>
@@ -104,16 +101,65 @@
             </div>
           </div>
         </div>
+
         <!-- Titulo -->
         <section id="intro-section" class="help mb-3">
           <div class="container">
             <div class="row text-center">
-              <h1 class="animated-text display-3 fw-bold text-capitalize">Reserva con nosotros</h1>
+              <h1 class="display-3 fw-bold text-capitalize">Nuestros Servicios</h1>
+              <div class="heading-line"></div>
+              <p class="lh-lg p-3">
+                "Dale a tu bicicleta el amor que se merece con nuestros servicios de mantenimiento personalizados"
+              </p>
+            </div>
+            <div class="row text-center">
+             <h1 class="display-3 fw-bold text-capitalize"></h1>
+            </div>
+
+            <section>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="servicios-vacio">
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+        <!-- Filtro de productos-->
+        <h2>Filtrar por categoría:</h2>
+        <label><input type="checkbox" name="categoria" value="Visita"> Visita</label>
+        <label><input type="checkbox" name="categoria" value="Cuadro"> Cuadro</label>
+        <label><input type="checkbox" name="categoria" value="Piezas"> Piezas</label>
+        <label><input type="checkbox" name="categoria" value="Mantención"> Mantención</label>
+        <button onclick="aplicarFiltro()">Aplicar Filtro</button>
+
+        <!-- Agregar productos con JavaScript -->
+        <h2>Productos:</h2>
+        <div id="productos" class="card-container">
+
+        </div>
+
+        <!-- agregar productos al Carrito -->
+        <h3>Carrito de Compras</h3>
+        <div id="carrito" class="carrito-container">
+
+        </div>
+
+        <!-- Sumar y restar productos -->
+
+       
+        <!-- Titulo -->
+        <section id="intro-section" class="help mb-3">
+          <div class="container">
+            <div class="row text-center p-3">
+              <h1 class="animated-text display-3 fw-bold text-capitalize">Favor ingresa tus datos de contacto</h1>
               <div class="heading-line"></div>
               <p class="lh-lg text-black">
                 ¡Estamos a tu disposición para ayudarte con todas tus necesidades de mantenimiento de bicicletas!
               </p>
             </div>
+
             <!--formulario-->
             <div class="container">
               <div class="row">
@@ -121,7 +167,13 @@
                   <img src="https://i.pinimg.com/550x/6f/95/6c/6f956cec8d7676a0ca3827720e33d8c0.jpg" alt="Imagen de reserva" class="img-fluid d-block">
                 </div>
                 <div class="col-md-6">
-                  <form>
+                  <form id="formulariocontacto">
+                    
+                    <!-- Total Carrito -->
+                    <h4>Total Carrito:</h4>
+                    <div id="TotalCarrito"></div>
+                    <br>
+
                     <div class="form-group">
                       <label for="nombre">Nombre completo:</label>
                       <input type="text" class="form-control" id="nombre">
@@ -135,19 +187,8 @@
                       <input type="tel" class="form-control" id="telefono">
                     </div>
                     <div class="form-group">
-                      <label for="fecha-llegada">Fecha de llegada:</label>
+                      <label for="fecha-llegada">Agenda Con Nosotros:</label>
                       <input type="date" class="form-control" id="fecha-llegada">
-                    </div>
-                    <div class="form-group">
-                      <label for="Mantencion">Tipo de mantención</label>
-                      <select class="form-control" id="Tipo_mantención">
-                        <option>Seleccionar</option>
-                        <option>Servicios Basicos </option>
-                        <option>Servicios Avanzados</option>
-                        <option>Mantencion Basica $20.000.-</option>
-                        <option>Mantencion Intermedia $35.000.-</option>
-                        <option>mantencion Avanzada $50.000.-</option>
-                      </select>
                     </div>
                     <div class="form-group">
                       <label for="Bicicletas">N° Bicicletas</label>
@@ -162,11 +203,16 @@
                       <label for="comentarios">Comentarios:</label>
                       <textarea class="form-control" id="comentarios" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary">Enviar y comprar</button>
                   </form>
                 </div>
               </div>
             </div>
+
+            <!-- Evento al Enviar a comprar -->
+            
+
+
         </section>
     </main>
 
@@ -197,6 +243,7 @@
                   >Términos y condiciones</a
                 >
               </li>
+              
               <li>
                 <a
                   class="text-white text-decoration-none"
@@ -249,6 +296,6 @@
         </p>
       </div>
     </footer>
-    <script src="../js/Reservas.js"></script>
+    <script src="../js/Carrito.js"></script>
   </body>
 </html>
