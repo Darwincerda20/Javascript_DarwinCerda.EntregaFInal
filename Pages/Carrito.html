@@ -128,25 +128,27 @@
 
         <!-- Filtro de productos-->
         <h2>Filtrar por categoría:</h2>
+        <label><input type="checkbox" id="mostrarTodos" onchange="aplicarFiltro()"> Mostrar todos</label>
         <label><input type="checkbox" name="categoria" value="Visita"> Visita</label>
         <label><input type="checkbox" name="categoria" value="Cuadro"> Cuadro</label>
         <label><input type="checkbox" name="categoria" value="Piezas"> Piezas</label>
         <label><input type="checkbox" name="categoria" value="Mantención"> Mantención</label>
-        <button onclick="aplicarFiltro()">Aplicar Filtro</button>
+        <button class="btn btn-primary" onclick="aplicarFiltro()">Aplicar Filtro</button>
 
-        <!-- Agregar productos con JavaScript -->
-        <h2>Productos:</h2>
-        <div id="productos" class="card-container">
-
+        <!-- LISTADO DE PRODUCTOS -->
+        <h2>NUESTROS SERVICIOS:</h2>
+        <div id="listado" class="card-container">
         </div>
 
-        <!-- agregar productos al Carrito -->
+        <!-- Carrito de compras -->
         <h3>Carrito de Compras</h3>
-        <div id="carrito" class="carrito-container">
+        <div id="carrito" class="carrito-container"></div>
 
-        </div>
+        <!-- Total del carrito -->
+        <h4>Total Carrito: <span id="TotalCarrito"></span></h4>
+      
 
-        <!-- Sumar y restar productos -->
+
 
        
         <!-- Titulo -->
@@ -185,19 +187,6 @@
                     <div class="form-group">
                       <label for="telefono">Teléfono:</label>
                       <input type="tel" class="form-control" id="telefono">
-                    </div>
-                    <div class="form-group">
-                      <label for="fecha-llegada">Agenda Con Nosotros:</label>
-                      <input type="date" class="form-control" id="fecha-llegada">
-                    </div>
-                    <div class="form-group">
-                      <label for="Bicicletas">N° Bicicletas</label>
-                      <select class="form-control" id="N° Bicicletas">
-                        <option>0</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                      </select>
                     </div>
                     <div class="form-group">
                       <label for="comentarios">Comentarios:</label>
