@@ -9,6 +9,8 @@ if (horaActual >= 9 && horaActual < 18) {
   console.log("El negocio está cerrado");
 }
 
+/*************************************** SALUDAR ****************************************************/
+
 const nombre = prompt("Ingresa tu nombre");
 let mensaje = "";
 
@@ -20,6 +22,4 @@ if (horaActual >= 0 && horaActual < 12) {
   mensaje = "Buenas noches";
 }
 
-alert(
-  mensaje + ", " + nombre +". ¡Llegaste al lugar indicado, en caso de que necesites ayuda contactanos!");
-
+alert (mensaje + ", " + nombre +". ¡Llegaste al lugar indicado, en caso de que necesites ayuda contactanos!")
